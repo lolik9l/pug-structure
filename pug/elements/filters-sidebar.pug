@@ -1,0 +1,162 @@
+﻿mixin filters-sidebar()
+	aside.sidebar.sidebar_filters
+		.sidebar__header
+			button.btn.svg-icon.sidebar__close.js-filters-closer(type="button" aria-label="Закрыть")
+				svg.svg(role="img" aria-hidden="true" width="24" height="24")
+					use(xlink:href="#svg-icon-close")
+
+			.sidebar__title.headline.headline_style2 Фильтры
+
+		.sidebar__body
+			.scrollbar-inner
+				form(name="filters-form" method="post")
+					.filters-block
+						.headline.headline_style4.filters-block__title Цвет
+
+						ul.list.list_unstyled.checkbox-list.filters-block__list
+							li.list-item.checkbox
+								label.checkbox-label
+									input.checkbox-hidden(type="checkbox" id="checkbox-colors-item-1" name="checkbox-colors-item-1")
+
+									span.checkbox-custom(aria-hidden="true")
+
+									span.checkbox-color(style="background: #F5F5DC;")
+
+									span.checkbox-text Бежевый (1)
+
+							li.list-item.checkbox
+								label.checkbox-label
+									input.checkbox-hidden(type="checkbox" id="checkbox-colors-item-2" name="checkbox-colors-item-2")
+
+									span.checkbox-custom(aria-hidden="true")
+
+									span.checkbox-color(style="background: #FFCBDB;")
+
+									span.checkbox-text Розовый (4)
+									
+							li.list-item.checkbox
+								label.checkbox-label
+									input.checkbox-hidden(type="checkbox" id="checkbox-colors-item-3" name="checkbox-colors-item-3")
+
+									span.checkbox-custom(aria-hidden="true")
+
+									span.checkbox-color(style="background: #5A009D;")
+
+									span.checkbox-text Фиолетовый (19)
+									
+							li.list-item.checkbox
+								label.checkbox-label
+									input.checkbox-hidden(type="checkbox" id="checkbox-colors-item-4" name="checkbox-colors-item-4")
+
+									span.checkbox-custom(aria-hidden="true")
+
+									span.checkbox-color(style="background: #000000;")
+
+									span.checkbox-text Черный (9)
+
+					.filters-block
+						.headline.headline_style4.filters-block__title Диаметр
+
+						ul.list.list_unstyled.checkbox-list.filters-block__list
+							li.list-item.checkbox
+								label.checkbox-label
+									input.checkbox-hidden(type="checkbox" id="checkbox-diameter-item-1" name="checkbox-diameter-item-1")
+
+									span.checkbox-custom(aria-hidden="true")
+
+									span.checkbox-text От 6 см (1)
+
+							li.list-item.checkbox
+								label.checkbox-label
+									input.checkbox-hidden(type="checkbox" id="checkbox-diameter-item-2" name="checkbox-diameter-item-2")
+
+									span.checkbox-custom(aria-hidden="true")
+
+									span.checkbox-text 2-3 см (4)
+
+							li.list-item.checkbox
+								label.checkbox-label
+									input.checkbox-hidden(type="checkbox" id="checkbox-diameter-item-3" name="checkbox-diameter-item-3")
+
+									span.checkbox-custom(aria-hidden="true")
+
+									span.checkbox-text 4-5 см (9)
+
+					.filters-block
+						.headline.headline_style4.filters-block__title Длина
+
+						ul.list.list_unstyled.checkbox-list.filters-block__list
+							li.list-item.checkbox
+								label.checkbox-label
+									input.checkbox-hidden(type="checkbox" id="checkbox-length-item-1" name="checkbox-length-item-1")
+
+									span.checkbox-custom(aria-hidden="true")
+
+									span.checkbox-text До 12 см (1)
+
+							li.list-item.checkbox
+								label.checkbox-label
+									input.checkbox-hidden(type="checkbox" id="checkbox-length-item-2" name="checkbox-length-item-2")
+
+									span.checkbox-custom(aria-hidden="true")
+
+									span.checkbox-text 14 см (4)
+
+							li.list-item.checkbox
+								label.checkbox-label
+									input.checkbox-hidden(type="checkbox" id="checkbox-length-item-3" name="checkbox-length-item-3")
+
+									span.checkbox-custom(aria-hidden="true")
+
+									span.checkbox-text 16-18 см (19)
+
+							li.list-item.checkbox
+								label.checkbox-label
+									input.checkbox-hidden(type="checkbox" id="checkbox-length-item-4" name="checkbox-length-item-4")
+
+									span.checkbox-custom(aria-hidden="true")
+
+									span.checkbox-text 18-20 см (9)
+
+					.filters-block
+						.headline.headline_style4.filters-block__title Для пары
+
+						ul.list.list_unstyled.checkbox-list.filters-block__list
+							li.list-item.checkbox
+								label.checkbox-label
+									input.checkbox-hidden(type="checkbox" id="checkbox-pair-item-1" name="checkbox-pair-item-1")
+
+									span.checkbox-custom(aria-hidden="true")
+
+									span.checkbox-text Для любой пары
+
+							li.list-item.checkbox
+								label.checkbox-label
+									input.checkbox-hidden(type="checkbox" id="checkbox-pair-item-2" name="checkbox-pair-item-2")
+
+									span.checkbox-custom(aria-hidden="true")
+
+									span.checkbox-text М+Ж
+
+							li.list-item.checkbox
+								label.checkbox-label
+									input.checkbox-hidden(type="checkbox" id="checkbox-pair-item-3" name="checkbox-pair-item-3")
+
+									span.checkbox-custom(aria-hidden="true")
+
+									span.checkbox-text М+М
+
+							li.list-item.checkbox
+								label.checkbox-label
+									input.checkbox-hidden(type="checkbox" id="checkbox-pair-item-4" name="checkbox-pair-item-4")
+
+									span.checkbox-custom(aria-hidden="true")
+
+									span.checkbox-text Ж+Ж
+
+		.sidebar__footer
+			.sidebar__info Найдено: 24 товара
+
+			button.btn.svg-icon.sidebar__cleaner.js-filters-cleaner(type="button" aria-label="Очистить поиск")
+				svg.svg(role="img" aria-hidden="true" width="24" height="24")
+					use(xlink:href="#svg-icon-close")

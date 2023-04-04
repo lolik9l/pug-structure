@@ -1,0 +1,33 @@
+mixin rabbit()
+	.rabbit.js-show-rabbit
+		.rabbit__wrap-img(data-rabbit-img) 
+			.rabbit__img.rabbit__img-hide
+				picture
+					img(src="images/content/rabbit.png" alt="rabbit")
+			.rabbit__img.rabbit__img-show
+				picture
+					img(src="images/content/rabbit-active.png" alt="rabbit active")
+
+		.rabbit__list(data-rabbit-list) 
+			.rabbit__list-bg
+				picture
+					img(src="images/backgrounds/rabbit-list-bg.svg" alt="rabbit list")
+
+			ul.list.list_unstyled.rabbit__list-wrap
+				li.rabbit__list-item
+					a.rabbit__list-link(href="javascript: void(0);") 
+						picture
+							img(src="images/svg/icon-question-circle-rabbit.svg" alt="question")
+						span Задать вопрос
+
+				li.rabbit__list-item
+					a.rabbit__list-link(href="javascript: void(0);") 
+						picture
+							img(src="images/svg/icon-subscribe-rabbit.svg" alt="subscribe")
+						span Подписка
+
+				li.rabbit__list-item
+					a.rabbit__list-link(href="javascript: void(0);") 
+						picture
+							img(src="images/svg/icon-glossary-rabbit.svg" alt="glossary")
+						span Rabby-словарь

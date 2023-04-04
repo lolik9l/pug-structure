@@ -1,0 +1,34 @@
+﻿mixin share-block(data)
+	.share-block(class=!!data.isLarge ? `share-block__large ${data.class}` : `${data.class}`)
+		if !!data.isLarge
+			.share-text.js-share-toggler 
+				span Поделиться результатом теста
+
+		.share-block__content
+			button.btn.btn_wi.share-block__btn.js-share-toggler(type="button" aria-label="Поделиться")
+				span.svg-icon.btn__icon
+					svg.svg.svg_share(role="img" aria-hidden="true" width="24" height="24")
+						use(xlink:href="#svg-icon-share-alt")
+
+					svg.svg.svg_close(role="img" aria-hidden="true" width="24" height="24")
+						use(xlink:href="#svg-icon-close")
+
+			.share-block__body
+				ul.list.list_unstyled.share-block__list
+					li.list-item
+						button.share-block__link.share-block__link_copy.js-copy-link(type="button" aria-label="Копировать ссылку" title="Копировать ссылку")
+							span.svg-icon.btn__icon
+								svg.svg(role="img" aria-hidden="true" width="28" height="28")
+									use(xlink:href="#svg-icon-link")
+
+					li.list-item
+						a.share-block__link(href="#" aria-label="Поделиться в Телеграм" title="Поделиться в Телеграм")
+							span.svg-icon.btn__icon
+								svg.svg(role="img" aria-hidden="true" width="28" height="28")
+									use(xlink:href="#svg-icon-telegram")
+
+					li.list-item
+						a.share-block__link(href="javascript: void(0)" aria-label="Поделиться в Whatsapp" title="Поделиться в Whatsapp")
+							span.svg-icon.btn__icon
+								svg.svg(role="img" aria-hidden="true" width="28" height="28")
+									use(xlink:href="#svg-icon-whatsapp")

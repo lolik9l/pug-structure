@@ -1,0 +1,27 @@
+﻿extends ../template
+
+include ../elements/inner-scrolled-nav
+
+include ../sections/main-start
+include ../sections/main-catalog
+include ../sections/main-voting
+include ../sections/main-questions
+include ../sections/main-useful
+include ../sections/main-blog
+include ../sections/main-popular
+
+block content
+	+main-start
+
+	+main-catalog
+
+	+main-voting
+
+	+main-questions({"class": ""})
+
+	+main-useful({"class": ""})
+
+	+main-blog({"class": ""})
+
+	+main-popular
+	

@@ -1,0 +1,979 @@
+mixin header()
+    header.header
+        .header-main
+            .container
+                .header-main__bar
+                    .header-main__menu-toggler.d-block.d-xl-none
+                        button.btn.btn_icon.menu-toggler.js-menu-toggler
+                            span.svg-icon.btn__icon.btn__icon_bar(aria-hidden="true")
+                                <svg class="svg" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-menu"></use></svg>
+
+                            span.svg-icon.btn__icon.btn__icon_close(aria-hidden="true")
+                                <svg class="svg" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-close"></use></svg>
+
+                            span.btn__text Закрыть
+
+                    .header-main__logo
+                        a.logo.svg-icon(href="/" aria-label="Rabby")
+                            <svg class="svg" role="img" aria-hidden="true" width="56" height="72"><use xlink:href="#svg-logo-rabby"></use></svg>
+
+                    nav.header-main__nav.d-none.d-xl-block
+                        ul.list.list_unstyled.nav-list
+                            li.list-item.active
+                                a.link.nav-link(href="/") Главная
+
+                            li.list-item.has-child
+                                a.link.nav-link(href="/catalog-categories") Каталог
+
+                                .header-main__dropdown-nav.dropdown-nav
+                                    .container
+                                        .dropdown-nav__content
+                                            .scrollbar-inner
+                                                .catalog-dropdown
+                                                    .catalog-dropdown__cell.catalog-dropdown__cell_left
+                                                        ul.list.list_unstyled.subnav-list.subnav-list_catalog-links
+                                                            li.list-item
+                                                                a.category-link(href="javascript: void(0);")
+                                                                    .category-link__img(aria-hidden="true")
+                                                                        picture
+                                                                            img(src="images/content/main-page/catalog/img_5.png", alt="")
+
+                                                                    .category-link__content
+                                                                        .category-link__title
+                                                                            h2 Лубриканты
+
+                                                                        .category-link__counter 80 товаров
+
+                                                            li.list-item
+                                                                a.category-link(href="javascript: void(0);")
+                                                                    .category-link__img(aria-hidden="true")
+                                                                        picture
+                                                                            img(src="images/content/main-page/catalog/img_3.png", alt="")
+
+                                                                    .category-link__content
+                                                                        .category-link__title
+                                                                            h2 Мастурбаторы
+
+                                                                        .category-link__counter 80 товаров
+
+                                                            li.list-item
+                                                                a.category-link(href="javascript: void(0);")
+                                                                    .category-link__img(aria-hidden="true")
+                                                                        picture
+                                                                            img(src="images/content/main-page/catalog/img_2.png", alt="")
+
+                                                                    .category-link__content
+                                                                        .category-link__title
+                                                                            h2 Вибропули
+
+                                                                        .category-link__counter 80 товаров
+
+                                                            li.list-item
+                                                                a.category-link(href="javascript: void(0);")
+                                                                    .category-link__img(aria-hidden="true")
+                                                                        picture
+                                                                            img(src="images/content/main-page/catalog/img_4.png", alt="")
+
+                                                                    .category-link__content
+                                                                        .category-link__title
+                                                                            h2 Вибраторы
+
+                                                                        .category-link__counter 80 товаров
+
+                                                            li.list-item
+                                                                a.category-link(href="javascript: void(0);")
+                                                                    .category-link__img(aria-hidden="true")
+                                                                        picture
+                                                                            img(src="images/content/main-page/catalog/img_2.png", alt="")
+
+                                                                    .category-link__content
+                                                                        .category-link__title
+                                                                            h2 Вакуумные помпы
+
+                                                                        .category-link__counter 80 товаров
+
+                                                            li.list-item
+                                                                a.category-link(href="javascript: void(0);")
+                                                                    .category-link__img(aria-hidden="true")
+                                                                        picture
+                                                                            img(src="images/content/main-page/catalog/img_3.png", alt="")
+
+                                                                    .category-link__content
+                                                                        .category-link__title
+                                                                            h2 Лубриканты
+
+                                                                        .category-link__counter 80 товаров
+
+                                                            li.list-item
+                                                                a.category-link(href="javascript: void(0);")
+                                                                    .category-link__img(aria-hidden="true")
+                                                                        picture
+                                                                            img(src="images/content/main-page/catalog/img_4.png", alt="")
+
+                                                                    .category-link__content
+                                                                        .category-link__title
+                                                                            h2 БДСМ
+
+                                                                        .category-link__counter 80 товаров
+
+                                                            li.list-item
+                                                                a.category-link(href="javascript: void(0);")
+                                                                    .category-link__img(aria-hidden="true")
+                                                                        picture
+                                                                            img(src="images/content/main-page/catalog/img_5.png", alt="")
+
+                                                                    .category-link__content
+                                                                        .category-link__title
+                                                                            h2 Вибраторы
+
+                                                                        .category-link__counter 80 товаров
+
+                                                            li.list-item
+                                                                a.category-link(href="javascript: void(0);")
+                                                                    .category-link__img(aria-hidden="true")
+                                                                        picture
+                                                                            img(src="images/content/main-page/catalog/img_2.png", alt="")
+
+                                                                    .category-link__content
+                                                                        .category-link__title
+                                                                            h2 Анальные пробки
+
+                                                                        .category-link__counter 80 товаров
+
+                                                            li.list-item
+                                                                a.category-link(href="javascript: void(0);")
+                                                                    .category-link__img(aria-hidden="true")
+                                                                        picture
+                                                                            img(src="images/content/main-page/catalog/img_3.png", alt="")
+
+                                                                    .category-link__content
+                                                                        .category-link__title
+                                                                            h2 Эрекционные кольца
+
+                                                                        .category-link__counter 80 товаров
+
+                                                            li.list-item
+                                                                a.category-link(href="javascript: void(0);")
+                                                                    .category-link__img(aria-hidden="true")
+                                                                        picture
+                                                                            img(src="images/content/main-page/catalog/img_4.png", alt="")
+
+                                                                    .category-link__content
+                                                                        .category-link__title
+                                                                            h2 Массажные масла
+
+                                                                        .category-link__counter 80 товаров
+
+                                                            li.list-item
+                                                                a.category-link(href="javascript: void(0);")
+                                                                    .category-link__img(aria-hidden="true")
+                                                                        picture
+                                                                            img(src="images/content/main-page/catalog/img_5.png", alt="")
+
+                                                                    .category-link__content
+                                                                        .category-link__title
+                                                                            h2 Разное
+
+                                                                        .category-link__counter 80 товаров
+
+                                                    .catalog-dropdown__cell.catalog-dropdown__cell_right
+                                                        ul.list.list_unstyled.subnav-list.subnav-list_catalog-buttons
+                                                            li.list-item
+                                                                a.category-btn.category-btn_blue(href="javascript: void(0);")
+                                                                    .category-btn__icon.svg-icon
+                                                                        svg.svg(role="img" aria-hidden="true" width="50" height="50")
+                                                                            use(xlink:href="#svg-icon-man")
+
+                                                                    .category-btn__content
+                                                                        .category-btn__title
+                                                                            h2 Для него
+
+                                                                        .category-btn__counter 80 товаров
+
+                                                                    .category-btn__arrow.svg-icon(aria-hidden="true")
+                                                                        svg.svg(role="img" aria-hidden="true" width="24" height="24")
+                                                                            use(xlink:href="#svg-icon-angle-right")
+
+                                                            li.list-item
+                                                                a.category-btn.category-btn_pink(href="javascript: void(0);")
+                                                                    .category-btn__icon.svg-icon
+                                                                        svg.svg(role="img" aria-hidden="true" width="50" height="50")
+                                                                            use(xlink:href="#svg-icon-woman")
+
+                                                                    .category-btn__content
+                                                                        .category-btn__title
+                                                                            h2 Для нее
+
+                                                                        .category-btn__counter 80 товаров
+
+                                                                    .category-btn__arrow.svg-icon(aria-hidden="true")
+                                                                        svg.svg(role="img" aria-hidden="true" width="24" height="24")
+                                                                            use(xlink:href="#svg-icon-angle-right")
+        
+                                                            li.list-item
+                                                                a.category-btn.category-btn_purple(href="javascript: void(0);")
+                                                                    .category-btn__icon.svg-icon
+                                                                        svg.svg(role="img" aria-hidden="true" width="50" height="50")
+                                                                            use(xlink:href="#svg-icon-pair")
+
+                                                                    .category-btn__content
+                                                                        .category-btn__title
+                                                                            h2 Для пары
+
+                                                                        .category-btn__counter 80 товаров
+
+                                                                    .category-btn__arrow.svg-icon(aria-hidden="true")
+                                                                        svg.svg(role="img" aria-hidden="true" width="24" height="24")
+                                                                            use(xlink:href="#svg-icon-angle-right")
+                                                                            
+                                                            li.list-item
+                                                                a.category-btn.category-btn_violet(href="javascript: void(0);")
+                                                                    .category-btn__icon.svg-icon
+                                                                        svg.svg(role="img" aria-hidden="true" width="50" height="50")
+                                                                            use(xlink:href="#svg-icon-gift")
+
+                                                                    .category-btn__content
+                                                                        .category-btn__title
+                                                                            h2 В подарок
+
+                                                                        .category-btn__counter 80 товаров
+
+                                                                    .category-btn__arrow.svg-icon(aria-hidden="true")
+                                                                        svg.svg(role="img" aria-hidden="true" width="24" height="24")
+                                                                            use(xlink:href="#svg-icon-angle-right")
+
+
+                            li.list-item.has-child
+                                a.link.nav-link(href="/universarium") Секс-просвет
+
+                                .header-main__dropdown-nav.dropdown-nav
+                                    .container
+                                        .dropdown-nav__content
+                                            .scrollbar-inner
+                                                ul.list.list_unstyled.subnav-list.subnav-list_universarium
+                                                    li.list-item
+                                                        a.universarium-link(href="javascript: void(0);")
+                                                            .universarium-link__content
+                                                                .headline.universarium-link__title Тест-драйвы
+
+                                                                    .universarium-link__icon.svg-icon(aria-hidden="true")
+                                                                        <svg class="svg" role="img" aria-hidden="true" width="16" height="16"><use xlink:href="#svg-icon-angle-right"></use></svg>
+
+                                                                .description.universarium-link__descr Известно ли работникам почты о том, что находится внутри посылки из вашего интернет-магазина?
+
+                                                            .universarium-link__img
+                                                                picture
+                                                                    <source srcset="images/content/menu/universarium-img1.webp" image/webp>
+                                                                    img(src="images/content/menu/universarium-img1.png" alt="" width="0" height="0")
+
+                                                    li.list-item
+                                                        a.universarium-link(href="javascript: void(0);")
+                                                            .universarium-link__content
+                                                                .headline.universarium-link__title Гайды
+
+                                                                    .universarium-link__icon.svg-icon(aria-hidden="true")
+                                                                        <svg class="svg" role="img" aria-hidden="true" width="16" height="16"><use xlink:href="#svg-icon-angle-right"></use></svg>
+
+                                                                .description.universarium-link__descr Ясность нашей позиции очевидна: высокотехнологичная концепция общественного уклада играет определяющее.
+
+                                                            .universarium-link__img
+                                                                picture
+                                                                    <source srcset="images/content/menu/universarium-img2.webp" image/webp>
+                                                                    img(src="images/content/menu/universarium-img2.png" alt="" width="0" height="0")
+
+                                                    li.list-item
+                                                        a.universarium-link(href="javascript: void(0);")
+                                                            .universarium-link__content
+                                                                .headline.universarium-link__title Вопросы
+
+                                                                    .universarium-link__icon.svg-icon(aria-hidden="true")
+                                                                        <svg class="svg" role="img" aria-hidden="true" width="16" height="16"><use xlink:href="#svg-icon-angle-right"></use></svg>
+
+                                                                .description.universarium-link__descr Известно ли работникам почты о том, что находится внутри посылки из вашего интернет-магазина?
+
+                                                            .universarium-link__img
+                                                                picture
+                                                                    <source srcset="images/content/menu/universarium-img3.webp" image/webp>
+                                                                    img(src="images/content/menu/universarium-img3.png" alt="" width="0" height="0")
+
+                                                    li.list-item
+                                                        a.universarium-link(href="javascript: void(0);")
+                                                            .universarium-link__content
+                                                                .headline.universarium-link__title Блог
+
+                                                                    .universarium-link__icon.svg-icon(aria-hidden="true")
+                                                                        <svg class="svg" role="img" aria-hidden="true" width="16" height="16"><use xlink:href="#svg-icon-angle-right"></use></svg>
+
+                                                                .description.universarium-link__descr Ясность нашей позиции очевидна: высокотехнологичная концепция общественного уклада играет определяющее.
+
+                                                            .universarium-link__img
+                                                                picture
+                                                                    <source srcset="images/content/menu/universarium-img4.webp" image/webp>
+                                                                    img(src="images/content/menu/universarium-img4.png" alt="" width="0" height="0")
+
+                                                    li.list-item
+                                                        a.universarium-link(href="javascript: void(0);")
+                                                            .universarium-link__content
+                                                                .headline.universarium-link__title Квизы
+
+                                                                    .universarium-link__icon.svg-icon(aria-hidden="true")
+                                                                        <svg class="svg" role="img" aria-hidden="true" width="16" height="16"><use xlink:href="#svg-icon-angle-right"></use></svg>
+
+                                                                .description.universarium-link__descr Ясность нашей позиции очевидна: высокотехнологичная концепция общественного уклада играет определяющее.
+
+                                                            .universarium-link__img
+                                                                picture
+                                                                    <source srcset="images/content/menu/universarium-img5.webp" image/webp>
+                                                                    img(src="images/content/menu/universarium-img5.png" alt="" width="0" height="0")
+
+                                                    li.list-item
+                                                        a.universarium-link(href="javascript: void(0);")
+                                                            .universarium-link__content
+                                                                .headline.universarium-link__title Rabby-словарь
+
+                                                                    .universarium-link__icon.svg-icon(aria-hidden="true")
+                                                                        <svg class="svg" role="img" aria-hidden="true" width="16" height="16"><use xlink:href="#svg-icon-angle-right"></use></svg>
+
+                                                                .description.universarium-link__descr Известно ли работникам почты о том, что находится внутри посылки из вашего интернет-магазина?
+
+                                                            .universarium-link__img
+                                                                picture
+                                                                    <source srcset="images/content/menu/universarium-img6.webp" image/webp>
+                                                                    img(src="images/content/menu/universarium-img6.png" alt="" width="0" height="0")
+
+                            li.list-item.has-child
+                                a.link.nav-link(href="/partnership") Сотрудничество
+
+                                .header-main__dropdown-nav.dropdown-nav
+                                    .container
+                                        .dropdown-nav__content
+                                            .scrollbar-inner
+                                                ul.list.list_unstyled.subnav-list.subnav-list_partnership
+                                                    li.list-item
+                                                        a.partnership-link(href="javascript: void(0);")
+                                                            .partnership-link__content
+                                                                .headline.partnership-link__title Экспертам
+
+                                                                    .partnership-link__icon.svg-icon(aria-hidden="true")
+                                                                        <svg class="svg" role="img" aria-hidden="true" width="16" height="16"><use xlink:href="#svg-icon-angle-right"></use></svg>
+
+                                                                .description.partnership-link__descr Ясность нашей позиции очевидна: высокотехнологичная концепция общественного уклада играет определяющее.
+
+                                                            .partnership-link__img
+                                                                picture
+                                                                    img(src="images/content/menu/partnership-img1.svg" alt="" width="0" height="0")
+
+                                                    li.list-item
+                                                        a.partnership-link(href="javascript: void(0);")
+                                                            .partnership-link__content
+                                                                .headline.partnership-link__title Блогерам
+
+                                                                    .partnership-link__icon.svg-icon(aria-hidden="true")
+                                                                        <svg class="svg" role="img" aria-hidden="true" width="16" height="16"><use xlink:href="#svg-icon-angle-right"></use></svg>
+
+                                                                .description.partnership-link__descr Ясность нашей позиции очевидна: высокотехнологичная концепция общественного уклада играет определяющее.
+
+                                                            .partnership-link__img
+                                                                picture
+                                                                    img(src="images/content/menu/partnership-img2.svg" alt="" width="0" height="0")
+
+                                                    li.list-item.disable-elem
+                                                        //- a.partnership-link(href="javascript: void(0);")
+                                                        .partnership-link
+                                                            .partnership-link__content
+                                                                .headline.partnership-link__title Оптовикам
+
+                                                                    .partnership-link__icon.svg-icon(aria-hidden="true")
+                                                                        <svg class="svg" role="img" aria-hidden="true" width="16" height="16"><use xlink:href="#svg-icon-angle-right"></use></svg>
+
+                                                                .description.partnership-link__descr Ясность нашей позиции очевидна: высокотехнологичная концепция общественного уклада играет определяющее.
+
+                                                            .partnership-link__img
+                                                                picture
+                                                                    img(src="images/content/menu/partnership-img3.svg" alt="" width="0" height="0")
+
+                    .header-main__controls
+                        ul.list.list_unstyled.controls-list
+                            li.list-item.list-item_search
+                                .header__search
+                                    form(name="header-search" method="post")
+                                        .form-group
+                                            input.form-control.form-control_search(type="search" id="header-search" name="header-search" placeholder="Поиск" autocomplete="off")
+
+                                            button.btn.btn_close.svg-icon.js-search-closer.js-search-clear(type="submit" aria-label="Закрыть")
+                                                <svg class="svg" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-close"></use></svg>
+
+                                    .header__search-results
+                                        .scrollbar-inner
+                                            .search-result
+                                                .headline.headline_style4.search-result__title Каталог
+
+                                                ul.list.list_unstyled.search-result__list
+                                                    li.list-item
+                                                        a.link.search-result__link(href="javascript: void(0);")
+                                                            span.link__icon.svg-icon(aria-hidden="true")
+                                                                <svg class="svg" role="img" aria-hidden="true" width="16" height="16"><use xlink:href="#svg-icon-angle-right"></use></svg>
+
+                                                            span.link__text Вибраторы
+
+                                                    li.list-item
+                                                        a.link.search-result__link(href="javascript: void(0);")
+                                                            span.link__icon.svg-icon(aria-hidden="true")
+                                                                <svg class="svg" role="img" aria-hidden="true" width="16" height="16"><use xlink:href="#svg-icon-angle-right"></use></svg>
+
+                                                            span.link__text Вибропули
+
+                                            .search-result
+                                                .headline.headline_style4.search-result__title Гайды
+
+                                                ul.list.list_unstyled.search-result__list
+                                                    li.list-item
+                                                        a.link.search-result__link(href="javascript: void(0);")
+                                                            span.link__icon.svg-icon(aria-hidden="true")
+                                                                <svg class="svg" role="img" aria-hidden="true" width="16" height="16"><use xlink:href="#svg-icon-angle-right"></use></svg>
+
+                                                            span.link__text Подбираем вибратор вместе с экспертом
+
+                                                    li.list-item
+                                                        a.link.search-result__link(href="javascript: void(0);")
+                                                            span.link__icon.svg-icon(aria-hidden="true")
+                                                                <svg class="svg" role="img" aria-hidden="true" width="16" height="16"><use xlink:href="#svg-icon-angle-right"></use></svg>
+
+                                                            span.link__text Что нужно знать о вибраторах
+                                                            
+                                            .search-result
+                                                .headline.headline_style4.search-result__title Тест-драйв
+
+                                                ul.list.list_unstyled.search-result__list
+                                                    li.list-item
+                                                        a.link.search-result__link(href="javascript: void(0);")
+                                                            span.link__icon.svg-icon(aria-hidden="true")
+                                                                <svg class="svg" role="img" aria-hidden="true" width="16" height="16"><use xlink:href="#svg-icon-angle-right"></use></svg>
+
+                                                            span.link__text Тест-драйв вибратора Lure Me
+                                                            
+                                                    li.list-item
+                                                        a.link.search-result__link(href="javascript: void(0);")
+                                                            span.link__icon.svg-icon(aria-hidden="true")
+                                                                <svg class="svg" role="img" aria-hidden="true" width="16" height="16"><use xlink:href="#svg-icon-angle-right"></use></svg>
+
+                                                            span.link__text Тест-драйв вибропули
+
+                                                    li.list-item
+                                                        a.link.search-result__link(href="javascript: void(0);")
+                                                            span.link__icon.svg-icon(aria-hidden="true")
+                                                                <svg class="svg" role="img" aria-hidden="true" width="16" height="16"><use xlink:href="#svg-icon-angle-right"></use></svg>
+
+                                                            span.link__text Тест-драйв вибратора Lure Me
+
+                                button.btn.btn_icon.svg-icon.btn_search.js-search-opener(type="button" aria-label="Поиск")
+                                    <svg class="svg" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-search"></use></svg>
+
+                            li.list-item
+                                a.btn.btn_icon.svg-icon(href="/profile" aria-label="Поиск")
+                                    <svg class="svg" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-user"></use></svg>
+
+        .header__panel.panel.panel_menu
+            .panel__content
+                nav.panel__body
+                    ul.list.list_unstyled.nav-list
+                        li.list-item.active
+                            a.link.nav-link(href="/")
+                                .nav-link__text Главная
+
+                        li.list-item.has-child
+                            a.link.nav-link.js-catalog-opener(href="/catalog-categories")
+                                .nav-link__text Каталог
+
+                                .nav-link__icon.svg-icon(aria-hidden="true")
+                                    <svg class="svg" role="img" aria-hidden="true" width="16" height="16"><use xlink:href="#svg-icon-angle-right"></use></svg>
+
+                        li.list-item.has-child
+                            a.link.nav-link(href="/universarium")
+                                .nav-link__text Секс-просвет
+
+                                .nav-link__icon.svg-icon(aria-hidden="true")
+                                    <svg class="svg" role="img" aria-hidden="true" width="16" height="16"><use xlink:href="#svg-icon-angle-right"></use></svg>
+
+                        li.list-item.has-child
+                            a.link.nav-link.js-partnership-opener(href="/partnership")
+                                .nav-link__text Сотрудничество
+
+                                .nav-link__icon.svg-icon(aria-hidden="true")
+                                    <svg class="svg" role="img" aria-hidden="true" width="16" height="16"><use xlink:href="#svg-icon-angle-right"></use></svg>
+
+                .panel__footer
+                    ul.list.list_unstyled.socials-list
+                        li.list-item
+                            a.socials-link.svg-icon(href="javascript: void(0);" target="_blank" rel="noopener nofollow" aria-label="Instagram")
+                                <svg class="svg" role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-instagram"></use></svg>
+
+                        li.list-item
+                            a.socials-link.svg-icon(href="javascript: void(0);" target="_blank" rel="noopener nofollow" aria-label="Youtube")
+                                <svg class="svg" role="img" aria-hidden="true" width="30" height="30"><use xlink:href="#svg-icon-youtube"></use></svg>
+
+        .header__panel.panel.panel_submenu.panel_catalog
+            .panel__content
+                .panel__body
+                    button.btn.btn_back.btn_back_gray.btn_wi.js-subnav-closer(type="button")
+                        span.btn__icon.svg-icon(aria-hidden="true")
+                            svg.svg(role="img" aria-hidden="true" width="24" height="24")
+                                use(xlink:href="#svg-icon-angle-right")
+
+                        span.btn__text Назад
+
+                    .catalog-dropdown
+                        ul.list.list_unstyled.subnav-list.subnav-list_catalog-buttons
+                            li.list-item
+                                a.category-btn.category-btn_blue(href="javascript: void(0);")
+                                    .category-btn__icon.svg-icon
+                                        svg.svg(role="img" aria-hidden="true" width="50" height="50")
+                                            use(xlink:href="#svg-icon-man")
+
+                                    .category-btn__content
+                                        .category-btn__title
+                                            h2 Для него
+
+                                        .category-btn__counter 80 товаров
+
+                                    .category-btn__arrow.svg-icon(aria-hidden="true")
+                                        svg.svg(role="img" aria-hidden="true" width="24" height="24")
+                                            use(xlink:href="#svg-icon-angle-right")
+
+                            li.list-item
+                                a.category-btn.category-btn_pink(href="javascript: void(0);")
+                                    .category-btn__icon.svg-icon
+                                        svg.svg(role="img" aria-hidden="true" width="50" height="50")
+                                            use(xlink:href="#svg-icon-woman")
+
+                                    .category-btn__content
+                                        .category-btn__title
+                                            h2 Для нее
+
+                                        .category-btn__counter 80 товаров
+
+                                    .category-btn__arrow.svg-icon(aria-hidden="true")
+                                        svg.svg(role="img" aria-hidden="true" width="24" height="24")
+                                            use(xlink:href="#svg-icon-angle-right")
+        
+                            li.list-item
+                                a.category-btn.category-btn_purple(href="javascript: void(0);")
+                                    .category-btn__icon.svg-icon
+                                        svg.svg(role="img" aria-hidden="true" width="50" height="50")
+                                            use(xlink:href="#svg-icon-pair")
+
+                                    .category-btn__content
+                                        .category-btn__title
+                                            h2 Для пары
+
+                                        .category-btn__counter 80 товаров
+
+                                    .category-btn__arrow.svg-icon(aria-hidden="true")
+                                        svg.svg(role="img" aria-hidden="true" width="24" height="24")
+                                            use(xlink:href="#svg-icon-angle-right")
+                                            
+                            li.list-item
+                                a.category-btn.category-btn_violet(href="javascript: void(0);")
+                                    .category-btn__icon.svg-icon
+                                        svg.svg(role="img" aria-hidden="true" width="50" height="50")
+                                            use(xlink:href="#svg-icon-gift")
+
+                                    .category-btn__content
+                                        .category-btn__title
+                                            h2 В подарок
+
+                                        .category-btn__counter 80 товаров
+
+                                    .category-btn__arrow.svg-icon(aria-hidden="true")
+                                        svg.svg(role="img" aria-hidden="true" width="24" height="24")
+                                            use(xlink:href="#svg-icon-angle-right")
+
+                        ul.list.list_unstyled.subnav-list.subnav-list_catalog-links
+                            li.list-item
+                                a.category-link(href="javascript: void(0);")
+                                    .category-link__img(aria-hidden="true")
+                                        picture
+                                            img(src="images/content/main-page/catalog/img_5.png", alt="")
+
+                                    .category-link__content
+                                        .category-link__title
+                                            h2 Лубриканты
+
+                                        .category-link__counter 80 товаров
+
+                            li.list-item
+                                a.category-link(href="javascript: void(0);")
+                                    .category-link__img(aria-hidden="true")
+                                        picture
+                                            img(src="images/content/main-page/catalog/img_3.png", alt="")
+
+                                    .category-link__content
+                                        .category-link__title
+                                            h2 Мастурбаторы
+
+                                        .category-link__counter 80 товаров
+
+                            li.list-item
+                                a.category-link(href="javascript: void(0);")
+                                    .category-link__img(aria-hidden="true")
+                                        picture
+                                            img(src="images/content/main-page/catalog/img_2.png", alt="")
+
+                                    .category-link__content
+                                        .category-link__title
+                                            h2 Вибропули
+
+                                        .category-link__counter 80 товаров
+
+                            li.list-item
+                                a.category-link(href="javascript: void(0);")
+                                    .category-link__img(aria-hidden="true")
+                                        picture
+                                            img(src="images/content/main-page/catalog/img_4.png", alt="")
+
+                                    .category-link__content
+                                        .category-link__title
+                                            h2 Вибраторы
+
+                                        .category-link__counter 80 товаров
+
+                            li.list-item
+                                a.category-link(href="javascript: void(0);")
+                                    .category-link__img(aria-hidden="true")
+                                        picture
+                                            img(src="images/content/main-page/catalog/img_2.png", alt="")
+
+                                    .category-link__content
+                                        .category-link__title
+                                            h2 Вакуумные помпы
+
+                                        .category-link__counter 80 товаров
+
+                            li.list-item
+                                a.category-link(href="javascript: void(0);")
+                                    .category-link__img(aria-hidden="true")
+                                        picture
+                                            img(src="images/content/main-page/catalog/img_3.png", alt="")
+
+                                    .category-link__content
+                                        .category-link__title
+                                            h2 Лубриканты
+
+                                        .category-link__counter 80 товаров
+
+                            li.list-item
+                                a.category-link(href="javascript: void(0);")
+                                    .category-link__img(aria-hidden="true")
+                                        picture
+                                            img(src="images/content/main-page/catalog/img_4.png", alt="")
+
+                                    .category-link__content
+                                        .category-link__title
+                                            h2 БДСМ
+
+                                        .category-link__counter 80 товаров
+
+                            li.list-item
+                                a.category-link(href="javascript: void(0);")
+                                    .category-link__img(aria-hidden="true")
+                                        picture
+                                            img(src="images/content/main-page/catalog/img_5.png", alt="")
+
+                                    .category-link__content
+                                        .category-link__title
+                                            h2 Вибраторы
+
+                                        .category-link__counter 80 товаров
+
+                            li.list-item
+                                a.category-link(href="javascript: void(0);")
+                                    .category-link__img(aria-hidden="true")
+                                        picture
+                                            img(src="images/content/main-page/catalog/img_2.png", alt="")
+
+                                    .category-link__content
+                                        .category-link__title
+                                            h2 Анальные пробки
+
+                                        .category-link__counter 80 товаров
+
+                            li.list-item
+                                a.category-link(href="javascript: void(0);")
+                                    .category-link__img(aria-hidden="true")
+                                        picture
+                                            img(src="images/content/main-page/catalog/img_3.png", alt="")
+
+                                    .category-link__content
+                                        .category-link__title
+                                            h2 Эрекционные кольца
+
+                                        .category-link__counter 80 товаров
+
+                            li.list-item
+                                a.category-link(href="javascript: void(0);")
+                                    .category-link__img(aria-hidden="true")
+                                        picture
+                                            img(src="images/content/main-page/catalog/img_4.png", alt="")
+
+                                    .category-link__content
+                                        .category-link__title
+                                            h2 Массажные масла
+
+                                        .category-link__counter 80 товаров
+
+                            li.list-item
+                                a.category-link(href="javascript: void(0);")
+                                    .category-link__img(aria-hidden="true")
+                                        picture
+                                            img(src="images/content/main-page/catalog/img_5.png", alt="")
+
+                                    .category-link__content
+                                        .category-link__title
+                                            h2 Разное
+
+                                        .category-link__counter 80 товаров
+
+
+        .header__panel.panel.panel_submenu.panel_universarium
+            .panel__content
+                .panel__body
+                    button.btn.btn_back.btn_back_gray.btn_wi.js-subnav-closer(type="button")
+                        span.btn__icon.svg-icon(aria-hidden="true")
+                            svg.svg(role="img" aria-hidden="true" width="24" height="24")
+                                use(xlink:href="#svg-icon-angle-right")
+
+                        span.btn__text Назад
+
+                    ul.list.list_unstyled.subnav-list.subnav-list_universarium
+                        li.list-item
+                            a.universarium-link(href="javascript: void(0);")
+                                .universarium-link__content
+                                    .headline.universarium-link__title Тест-драйвы
+
+                                        .universarium-link__icon.svg-icon(aria-hidden="true")
+                                            <svg class="svg" role="img" aria-hidden="true" width="16" height="16"><use xlink:href="#svg-icon-angle-right"></use></svg>
+
+                                    .description.universarium-link__descr Известно ли работникам почты о том, что находится внутри посылки из вашего интернет-магазина?
+
+                                .universarium-link__img
+                                    picture
+                                        <source srcset="images/content/menu/universarium-img1_mobile.webp" image/webp>
+                                        img(src="images/content/menu/universarium-img1_mobile.png" alt="" width="0" height="0")
+
+                        li.list-item
+                            a.universarium-link(href="javascript: void(0);")
+                                .universarium-link__content
+                                    .headline.universarium-link__title Гайды
+
+                                        .universarium-link__icon.svg-icon(aria-hidden="true")
+                                            <svg class="svg" role="img" aria-hidden="true" width="16" height="16"><use xlink:href="#svg-icon-angle-right"></use></svg>
+
+                                    .description.universarium-link__descr Ясность нашей позиции очевидна: высокотехнологичная концепция общественного уклада играет определяющее.
+
+                                .universarium-link__img
+                                    picture
+                                        <source srcset="images/content/menu/universarium-img2_mobile.webp" image/webp>
+                                        img(src="images/content/menu/universarium-img2_mobile.png" alt="" width="0" height="0")
+
+                        li.list-item
+                            a.universarium-link(href="javascript: void(0);")
+                                .universarium-link__content
+                                    .headline.universarium-link__title Вопросы
+
+                                        .universarium-link__icon.svg-icon(aria-hidden="true")
+                                            <svg class="svg" role="img" aria-hidden="true" width="16" height="16"><use xlink:href="#svg-icon-angle-right"></use></svg>
+
+                                    .description.universarium-link__descr Известно ли работникам почты о том, что находится внутри посылки из вашего интернет-магазина?
+
+                                .universarium-link__img
+                                    picture
+                                        <source srcset="images/content/menu/universarium-img3_mobile.webp" image/webp>
+                                        img(src="images/content/menu/universarium-img3_mobile.png" alt="" width="0" height="0")
+
+                        li.list-item
+                            a.universarium-link(href="javascript: void(0);")
+                                .universarium-link__content
+                                    .headline.universarium-link__title Блог
+
+                                        .universarium-link__icon.svg-icon(aria-hidden="true")
+                                            <svg class="svg" role="img" aria-hidden="true" width="16" height="16"><use xlink:href="#svg-icon-angle-right"></use></svg>
+
+                                    .description.universarium-link__descr Ясность нашей позиции очевидна: высокотехнологичная концепция общественного уклада играет определяющее.
+
+                                .universarium-link__img
+                                    picture
+                                        <source srcset="images/content/menu/universarium-img4_mobile.webp" image/webp>
+                                        img(src="images/content/menu/universarium-img4_mobile.png" alt="" width="0" height="0")
+
+                        li.list-item
+                            a.universarium-link(href="javascript: void(0);")
+                                .universarium-link__content
+                                    .headline.universarium-link__title Квизы
+
+                                        .universarium-link__icon.svg-icon(aria-hidden="true")
+                                            <svg class="svg" role="img" aria-hidden="true" width="16" height="16"><use xlink:href="#svg-icon-angle-right"></use></svg>
+
+                                    .description.universarium-link__descr Ясность нашей позиции очевидна: высокотехнологичная концепция общественного уклада играет определяющее.
+
+                                .universarium-link__img
+                                    picture
+                                        <source srcset="images/content/menu/universarium-img5_mobile.webp" image/webp>
+                                        img(src="images/content/menu/universarium-img5_mobile.png" alt="" width="0" height="0")
+
+                        li.list-item
+                            a.universarium-link(href="javascript: void(0);")
+                                .universarium-link__content
+                                    .headline.universarium-link__title Rabby-словарь
+
+                                        .universarium-link__icon.svg-icon(aria-hidden="true")
+                                            <svg class="svg" role="img" aria-hidden="true" width="16" height="16"><use xlink:href="#svg-icon-angle-right"></use></svg>
+
+                                    .description.universarium-link__descr Известно ли работникам почты о том, что находится внутри посылки из вашего интернет-магазина?
+
+                                .universarium-link__img
+                                    picture
+                                        <source srcset="images/content/menu/universarium-img6_mobile.webp" image/webp>
+                                        img(src="images/content/menu/universarium-img6_mobile.png" alt="" width="0" height="0")
+
+        .header__panel.panel.panel_submenu.panel_partnership
+            .panel__content
+                .panel__body
+                    button.btn.btn_back.btn_back_gray.btn_wi.js-subnav-closer(type="button")
+                        span.btn__icon.svg-icon(aria-hidden="true")
+                            svg.svg(role="img" aria-hidden="true" width="24" height="24")
+                                use(xlink:href="#svg-icon-angle-right")
+
+                        span.btn__text Назад
+
+                    ul.list.list_unstyled.subnav-list.subnav-list_partnership
+                        li.list-item
+                            a.partnership-link(href="javascript: void(0);")
+                                .partnership-link__content
+                                    .headline.partnership-link__title Экспертам
+
+                                        .partnership-link__icon.svg-icon(aria-hidden="true")
+                                            <svg class="svg" role="img" aria-hidden="true" width="16" height="16"><use xlink:href="#svg-icon-angle-right"></use></svg>
+
+                                    .description.partnership-link__descr Ясность нашей позиции очевидна: высокотехнологичная концепция общественного уклада играет определяющее.
+
+                                .partnership-link__img
+                                    picture
+                                        img(src="images/content/menu/partnership-img1.svg" alt="" width="0" height="0")
+
+                        li.list-item
+                            a.partnership-link(href="javascript: void(0);")
+                                .partnership-link__content
+                                    .headline.partnership-link__title Блогерам
+
+                                        .partnership-link__icon.svg-icon(aria-hidden="true")
+                                            <svg class="svg" role="img" aria-hidden="true" width="16" height="16"><use xlink:href="#svg-icon-angle-right"></use></svg>
+
+                                    .description.partnership-link__descr Ясность нашей позиции очевидна: высокотехнологичная концепция общественного уклада играет определяющее.
+
+                                .partnership-link__img
+                                    picture
+                                        img(src="images/content/menu/partnership-img2.svg" alt="" width="0" height="0")
+
+                        li.list-item
+                            a.partnership-link(href="javascript: void(0);")
+                                .partnership-link__content
+                                    .headline.partnership-link__title Оптовикам
+
+                                        .partnership-link__icon.svg-icon(aria-hidden="true")
+                                            <svg class="svg" role="img" aria-hidden="true" width="16" height="16"><use xlink:href="#svg-icon-angle-right"></use></svg>
+
+                                    .description.partnership-link__descr Ясность нашей позиции очевидна: высокотехнологичная концепция общественного уклада играет определяющее.
+
+                                .partnership-link__img
+                                    picture
+                                        img(src="images/content/menu/partnership-img3.svg" alt="" width="0" height="0")
+
+        .header__panel.panel.panel_search
+            .panel__content
+                .panel__header
+                    .header__search
+                        form(name="header-search-mobile" method="post")
+                            .form-group
+                                input.form-control.form-control_search(type="search" id="header-search-mobile" name="header-search-mobile" placeholder="Поиск" autocomplete="off")
+
+                                button.btn.btn_close.svg-icon.js-search-closer.js-search-clear(type="button" aria-label="Закрыть")
+                                    <svg class="svg" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-close"></use></svg>
+
+                .panel__body
+                    .search-result
+                        .headline.headline_style4.search-result__title Каталог
+
+                        ul.list.list_unstyled.search-result__list
+                            li.list-item
+                                a.link.search-result__link(href="javascript: void(0);")
+                                    span.link__icon.svg-icon(aria-hidden="true")
+                                        <svg class="svg" role="img" aria-hidden="true" width="16" height="16"><use xlink:href="#svg-icon-angle-right"></use></svg>
+
+                                    span.link__text Вибраторы
+
+                            li.list-item
+                                a.link.search-result__link(href="javascript: void(0);")
+                                    span.link__icon.svg-icon(aria-hidden="true")
+                                        <svg class="svg" role="img" aria-hidden="true" width="16" height="16"><use xlink:href="#svg-icon-angle-right"></use></svg>
+
+                                    span.link__text Вибропули
+
+                    .search-result
+                        .headline.headline_style4.search-result__title Гайды
+
+                        ul.list.list_unstyled.search-result__list
+                            li.list-item
+                                a.link.search-result__link(href="javascript: void(0);")
+                                    span.link__icon.svg-icon(aria-hidden="true")
+                                        <svg class="svg" role="img" aria-hidden="true" width="16" height="16"><use xlink:href="#svg-icon-angle-right"></use></svg>
+
+                                    span.link__text Подбираем вибратор вместе с экспертом
+
+                            li.list-item
+                                a.link.search-result__link(href="javascript: void(0);")
+                                    span.link__icon.svg-icon(aria-hidden="true")
+                                        <svg class="svg" role="img" aria-hidden="true" width="16" height="16"><use xlink:href="#svg-icon-angle-right"></use></svg>
+
+                                    span.link__text Что нужно знать о вибраторах
+                                    
+                    .search-result
+                        .headline.headline_style4.search-result__title Тест-драйв
+
+                        ul.list.list_unstyled.search-result__list
+                            li.list-item
+                                a.link.search-result__link(href="javascript: void(0);")
+                                    span.link__icon.svg-icon(aria-hidden="true")
+                                        <svg class="svg" role="img" aria-hidden="true" width="16" height="16"><use xlink:href="#svg-icon-angle-right"></use></svg>
+
+                                    span.link__text Тест-драйв вибратора Lure Me
+                                    
+                            li.list-item
+                                a.link.search-result__link(href="javascript: void(0);")
+                                    span.link__icon.svg-icon(aria-hidden="true")
+                                        <svg class="svg" role="img" aria-hidden="true" width="16" height="16"><use xlink:href="#svg-icon-angle-right"></use></svg>
+
+                                    span.link__text Тест-драйв вибропули
+
+                            li.list-item
+                                a.link.search-result__link(href="javascript: void(0);")
+                                    span.link__icon.svg-icon(aria-hidden="true")
+                                        <svg class="svg" role="img" aria-hidden="true" width="16" height="16"><use xlink:href="#svg-icon-angle-right"></use></svg>
+
+                                    span.link__text Тест-драйв вибратора Lure Me
+
+        .header__backdrop.js-filters-closer.js-menu-closer.js-search-closer(aria-hidden="true")
+
+//- <script>
+//- export default {
+//-     name: 'HeaderApp',
+//-     data: () => ({
+//-         search: ''
+//-     }),
+//-     methods: {
+//-         transitionOnPageSearch() {
+//-             console.log('test', 'transitionOnPageSearch');
+//-             this.$router.push({ name: 'Search', params: { msg: this.search } });
+//-         }
+//-     }
+//- }
+//- </script>

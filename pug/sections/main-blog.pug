@@ -1,0 +1,116 @@
+﻿mixin main-blog(data)
+	section.section.section_main-blog#blog(class=data.class)
+		.section__bg#section_main-blog-bg(aria-hidden="true")
+
+		.section__content
+			.container
+				.row.justify-content-center
+					.col-12.col-lg-7.col-xl-6
+						.section__main
+							.headline.headline_style1.headline_main
+								h2 Блог
+
+							.description.description_main Ясность нашей позиции очевидна: высокотехнологичная концепция общественного уклада играет определяющее значение для направлений прогрессивного развития.
+
+							+inner-scrolled-nav
+
+							.section__control
+								a.btn.btn_default.btn_transparent.btn_wi(href="javascript: void(0);")
+									span.btn__text Все блоги
+
+									span.btn__icon.svg-icon(aria-hidden="true")
+										<svg class="svg" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-angle-right"></use></svg>
+
+							.section__img 
+								img(src="images/svg/illustrations/main-blog-img.svg" alt="" width="0" height="0")
+
+					.col-12.col-md-10.col-lg-5.col-xl-6
+						.section__slider.swiper-container.js-full-slider
+							.swiper-wrapper
+								.swiper-slide
+									.card.card_full
+										.card__header
+											.card__category Анальный секс
+
+											a.card__img.background-img(href="javascript: void(0);")
+												picture
+													img(src="images/content/photos/img-1.png" alt="" width="0" height="0")
+
+										.card__body
+											a.headline.headline_style4.card__title(href="javascript: void(0);")
+												h3 Подбираем лубриканты вместе с экспертом
+
+											a.card__descr.description(href="javascript: void(0);") Ясность нашей позиции очевидна: высокотехнологичная концепция общественного уклада играет определяющее.
+											
+										.card__footer
+											.card__statistics
+												ul.list.list_unstyled.statistics-list
+													li.list-item
+														button.btn.statistics-icon.svg-icon.liked.js-btn-remove-like(type="button")
+															<svg class="svg" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+
+															<svg class="svg svg-fill" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+
+														.statistics-text 367
+
+													li.list-item
+														.statistics-icon.svg-icon
+															<svg class="svg" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-eye"></use></svg>
+
+														.statistics-text 234
+
+											.card__control
+												a.btn.btn_pink.btn_wi.btn_card(href="javascript: void(0);")
+													span.btn__text Читать
+
+													span.btn__icon.svg-icon(aria-hidden="true")
+														<svg class="svg" role="img" aria-hidden="true" width="14" height="14"><use xlink:href="#svg-icon-angle-right"></use></svg>
+
+								.swiper-slide
+									.card.card_full
+										.card__header
+											.card__category Игрушки
+
+											a.card__img.background-img(href="javascript: void(0);")
+												picture
+													img(src="images/content/photos/img-2.png" alt="" width="0" height="0")
+
+										.card__body
+											a.headline.headline_style4.card__title(href="javascript: void(0);")
+												h3 Какой ты в постели
+
+											a.card__descr.description(href="javascript: void(0);") Ясность нашей позиции очевидна: высокотехнологичная концепция общественного уклада играет определяющее значение для направлений прогрессивного развития.
+
+										.card__footer
+											.card__statistics
+												ul.list.list_unstyled.statistics-list
+													li.list-item
+														button.btn.statistics-icon.svg-icon.js-btn-like(type="button")
+															<svg class="svg" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart"></use></svg>
+
+															<svg class="svg svg-fill" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-heart-fill"></use></svg>
+
+														.statistics-text 367
+
+													li.list-item
+														.statistics-icon.svg-icon
+															<svg class="svg" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-eye"></use></svg>
+
+														.statistics-text 234
+
+											.card__control
+												a.btn.btn_pink.btn_wi.btn_card(href="javascript: void(0);")
+													span.btn__text Читать
+
+													span.btn__icon.svg-icon(aria-hidden="true")
+														<svg class="svg" role="img" aria-hidden="true" width="14" height="14"><use xlink:href="#svg-icon-angle-right"></use></svg>
+
+
+							.swiper-nav
+								button.swiper-button-prev.svg-icon(type="button" aria-label="Предыдущий слайд")
+									<svg class="svg" role="img" aria-hidden="true" width="32" height="32"><use xlink:href="#svg-icon-angle-right"></use></svg>
+
+								button.swiper-button-next.svg-icon(type="button" aria-label="Следующий слайд")
+									<svg class="svg" role="img" aria-hidden="true" width="32" height="32"><use xlink:href="#svg-icon-angle-right"></use></svg>
+
+								.swiper-pagination

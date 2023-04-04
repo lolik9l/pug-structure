@@ -1,0 +1,40 @@
+include partials/head
+include partials/header
+include partials/subscribe
+include partials/footer
+include partials/modals
+include partials/svg
+
+doctype html
+html(lang="ru")
+
+    block head
+        head
+            +head({
+                "title": "Rabby",
+                "description": "Rabby"
+            })
+
+        body
+            .preloader.d-none(aria-label="Загрузка...")
+
+            block header
+                +header
+
+            .main-content#main-content
+                block content
+
+                block footer
+
+            +svg
+
+
+            block vendors
+                script( src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js")
+                script( src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js")
+                script( type="module", src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js" )
+                script( src="js/jquery-3.3.1.min.js")
+                script( src="js/core-dist.js")
+                script( src="js/gsap-animations.js")
+            block scripts
+                script( src="js/main.js")

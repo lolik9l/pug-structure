@@ -1,0 +1,29 @@
+﻿mixin subscribe()
+	section.section.section_subscribe#subscribe
+		.section__bg(aria-hidden="true")#subscribe-bg
+		
+		.section__content
+			.container
+				.row.align-items-center.justify-content-center.no-gutters
+					.col-12.col-md-6.col-lg-auto
+						.subscribe-info
+							.headline.headline_style1
+								h2 Что нового
+
+							.description
+								p Ясность нашей позиции очевидна: высокотехнологичная концепция общественного уклада играет определяющее.
+
+					.col-12.col-md-6.col-lg-auto
+						.subscribe-form
+							form(name="subscribe-form" method="post")
+								.form-group
+									label.form-label(for="subscribe-email") E-mail
+
+									input.form-control(type="email" id="subscribe-email" name="subscribe-email" placeholder="Введите ваш email" required)
+
+								.form-btn
+									button.btn.btn_default.btn_wi.btn_pink(type="submit")
+										span.btn__text Подписаться
+
+										span.btn__icon.svg-icon(aria-hidden="true")
+											<svg class="svg" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-mail"></use></svg>

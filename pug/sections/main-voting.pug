@@ -1,0 +1,69 @@
+﻿mixin main-voting()
+	section.section.section_main-voting#voting
+		.section__bg#main-voting-bg(aria-hidden="true")
+		.section__bg-end#main-voting-bg-end(aria-hidden="true")
+		
+		form.section__form
+			.container
+				.row.flex-wrap-reverse
+					.col-12.col-xl-7
+
+						.voting-cards
+							label.voting-card(for="voting-option-2")
+								picture.voting-card__img
+									img(src="images/content/main-page/poster.png", alt=" Pickle Rick" width="0" height="0")
+
+								.voting-card__title Pickle Rick
+
+							label.voting-card(for="voting-option-1")
+								picture.voting-card__img
+									img(src="images/content/main-page/start-img.png", alt="Вибратор" width="0" height="0")
+
+								.voting-card__title Вибратор
+
+					.col-12.col-xl-5.align-self-center
+						form(name="voting-form", method="post")
+							.voting-inputs
+								.headline.headline_style1
+									h2 Голосование месяца
+
+								.description Что лучше - Вибратор или Pickle Rick?
+
+								label.voting-input
+									.voting-input__radio.radio
+										label.radio-label
+											input.radio-hidden(id="voting-option-1", type="radio", name="voting-01" checked)
+
+											span.radio-custom(aria-hidden="true")
+
+											span.radio-text.sr-only Вибратор
+
+									.progressbar
+										.progressbar__line(style="width: 30%")
+
+										.progressbar__title Вибратор
+
+										.progressbar__percent 30%
+
+								label.voting-input
+									.voting-input__radio.radio
+										label.radio-label
+											input.radio-hidden(id="voting-option-2", type="radio", name="voting-01")
+
+											span.radio-custom(aria-hidden="true")
+
+											span.radio-text.sr-only Огурец
+
+									.progressbar
+										.progressbar__line(style="width: 70%")
+
+										.progressbar__title Pickle Rick
+
+										.progressbar__percent 70%
+
+								button.btn.btn_pink.btn_wi.btn_card.js-btn-voting(type="button") 
+									span.btn__text Голосовать
+
+									span.btn__icon.svg-icon(aria-hidden="true")
+										svg.svg(role="img", aria-hidden="true", width="24", height="24")
+											use(xlink:href="#svg-icon-check")

@@ -1,0 +1,420 @@
+* {
+	outline: none !important;
+}
+
+img {
+	width: auto;
+	height: auto;
+	max-width: 100%;
+}
+
+svg {
+	pointer-events: none;
+}
+
+// html,
+// body {
+// 	scrollbar-width: none;
+// }
+
+// html::-webkit-scrollbar,
+// body::-webkit-scrollbar {
+// 	width: 0;
+// 	height: 0;
+// }
+
+.disable-scroll {
+	overflow: hidden;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.list_unstyled {
+	list-style: none;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 0;
+}
+
+.reset-position {
+	position: initial !important;
+}
+
+.ml-auto {
+	margin-left: auto;
+}
+
+.mr-auto {
+	margin-right: auto;
+}
+
+.svg-icon {
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 0;
+
+	svg {
+		width: 100%;
+		height: auto;
+	}
+}
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
+}
+
+.main-content {
+	overflow: hidden;
+}
+
+.section {
+	position: relative;
+
+	&__bg {
+		pointer-events: none;
+		z-index: -2;
+
+		// @media (max-width: 1024px) {
+		// 	transform: translate(0, 0) !important;
+		// }
+	}
+
+	&__content {
+		position: relative;
+		z-index: 2;
+	}
+}
+
+.headline {
+	font-weight: bold;
+
+	&_style1 {
+		font-size: 100px;
+		line-height: 0.8;
+		letter-spacing: -0.05em;
+	}
+
+	&_style2 {
+		font-size: 50px;
+		line-height: 1;
+	}
+
+	&_style3 {
+		font-size: 40px;
+		line-height: 1;
+	}
+
+	&_style4 {
+		font-size: 24px;
+		line-height: 1;
+	}
+}
+
+// .container {
+// 	transition: 0.3s padding linear, 0.3s max-width linear;
+// }
+
+// .container.without-padding {
+// 	max-width: 100% !important;
+// 	padding: 0 !important;
+// }
+
+.disable-elem {
+	opacity: 0.2 !important;
+
+	& *:hover,
+	&:hover {
+		// color: inherit !important;
+		// background: inherit !important;
+		// opacity: 0.2 !important;
+		cursor: no-drop;
+	}
+}
+
+.description {
+	& > :last-child {
+		margin-bottom: 0;
+	}
+}
+
+.socials-list {
+	margin: 0 -8px;
+	display: flex;
+	flex-wrap: wrap;
+
+	.list-item {
+		margin-bottom: 5px;
+		padding: 0 8px;
+		flex: 0 0 auto;
+		max-width: 56px;
+	}
+}
+
+.socials-link {
+	width: 40px;
+
+	&:hover,
+	&:focus {
+		color: @color-pink_dark;
+	}
+}
+
+.glossary-link {
+	color: inherit;
+	border-bottom: 1px dashed;
+	text-decoration: none;
+
+	&:hover,
+	&:focus {
+		color: @color-violet_dark;
+		text-decoration: none;
+	}
+}
+
+@media (max-width: 1549px) {
+	.headline {
+		&_style1 {
+			font-size: 80px;
+		}
+
+		&_style2 {
+			font-size: 40px;
+		}
+
+		&_style3 {
+			font-size: 30px;
+		}
+
+		&_style4 {
+			font-size: 22px;
+		}
+	}
+}
+
+@media (max-width: 1279px) {
+	.headline {
+		&_style1 {
+			font-size: 64px;
+		}
+
+		&_style2 {
+			font-size: 30px;
+		}
+
+		&_style3 {
+			font-size: 24px;
+		}
+
+		&_style4 {
+			font-size: 20px;
+		}
+	}
+}
+
+@media (max-width: 1024px) {
+	.headline {
+		&_style1 {
+			font-size: 50px;
+		}
+
+		&_style2 {
+			font-size: 24px;
+		}
+
+		&_style4 {
+			font-size: 18px;
+		}
+	}
+}
+
+@keyframes bubble-move {
+	from {
+		transform: translateY(-5px);
+	}
+
+	to {
+		transform: translateY(5px);
+	}
+}
+
+.fade {
+	opacity: 0;
+	-webkit-transition: opacity 0.15s linear;
+	-o-transition: opacity 0.15s linear;
+	transition: opacity 0.15s linear;
+}
+
+.fade.show,
+.fade.in {
+	opacity: 1;
+}
+
+.collapse {
+	display: none;
+}
+
+.collapse.show {
+	display: block;
+}
+
+tr.collapse.show {
+	display: table-row;
+}
+
+tbody.collapse.show {
+	display: table-row-group;
+}
+
+.collapsing {
+	position: relative;
+	height: 0;
+	overflow: hidden;
+	-webkit-transition-property: height, visibility;
+	-o-transition-property: height, visibility;
+	transition-property: height, visibility;
+	-webkit-transition-duration: 0.35s;
+	-o-transition-duration: 0.35s;
+	transition-duration: 0.35s;
+	-webkit-transition-timing-function: ease;
+	-o-transition-timing-function: ease;
+	transition-timing-function: ease;
+}
+
+.tab-content .tab-pane {
+	display: none;
+}
+
+.tab-content .tab-pane.active {
+	display: block;
+}
+
+.background-video,
+.background-img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	background-color: transparent;
+	.bg-img;
+	overflow: hidden;
+
+	img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		min-width: 100%;
+		min-height: 100%;
+		max-width: none;
+		color: transparent;
+
+		@supports (object-fit: cover) or (-o-object-fit: cover) {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+
+		@supports (transform: translate(0, 0)) or
+			(-webkit-transform: translate(0, 0)) {
+			top: 50%;
+			left: 50%;
+			transform: translateX(-50%) translateY(-50%);
+		}
+	}
+
+	video {
+		position: absolute;
+		top: 0;
+		left: 0;
+		min-width: 100%;
+		min-height: 100%;
+		width: auto;
+		height: auto;
+
+		@supports (transform: translate(0, 0)) or
+			(-webkit-transform: translate(0, 0)) {
+			top: 50%;
+			left: 50%;
+			transform: translateX(-50%) translateY(-50%);
+		}
+	}
+}
+
+.video-responsive {
+	position: relative;
+	padding-bottom: 56.25%;
+	display: block;
+	height: 0;
+	overflow: hidden;
+}
+
+.video-responsive iframe,
+.video-responsive object,
+.video-responsive embed,
+.video-responsive video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+
+	@supports (transform: translate(0, 0)) or
+		(-webkit-transform: translate(0, 0)) {
+		top: 50%;
+		left: 50%;
+		transform: translateX(-50%) translateY(-50%);
+	}
+}
+
+.vibration-product {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	box-shadow: -10px 10px 30px rgba(0, 0, 0, 0.15),
+		inset -5px 5px 10px rgba(255, 255, 255, 0.07),
+		inset 5px -5px 15px rgba(0, 0, 0, 0.2);
+	transition: 0.3s opacity linear;
+	z-index: 9;
+	display: none;
+
+	&:hover,
+	&:active {
+		opacity: 0.8;
+	}
+
+	@media (max-width: 1024px) {
+		display: block;
+	}
+}
+
+label.error {
+	position: absolute;
+	top: 100%;
+	// left: 0;
+	width: 100%;
+	font-size: 12px;
+	margin: 0;
+	color: red;
+
+	@media (max-width: 1024px) {
+		font-size: 10px;
+	}
+}
+
+// .js-full-slider .swiper-slide {
+// 	display: flex;
+// 	justify-content: center;
+// }

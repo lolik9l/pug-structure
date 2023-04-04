@@ -1,0 +1,23 @@
+extends ../error-template
+
+block content
+    section.section.error#error
+        .container
+            .section__bg.section__bg_1(aria-hidden="true")
+
+            .section__bg.section__bg_2(aria-hidden="true")
+
+            .section__bg.section__bg_3(aria-hidden="true")
+
+            .section__bg.section__bg_4(aria-hidden="true")
+
+            .section__content
+                .section__body
+                    picture.section__body-img
+                        img(src="images/svg/error-page-404.svg" alt="error 404")
+                .section__footer
+                    a.btn.btn_default.btn_pink.btn_wi.js-start-test(href="/rabby")
+                        span.btn__text Вернуться на главную
+
+                        span.btn__icon.svg-icon(aria-hidden="true")
+                            <svg class="svg" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-angle-right"></use></svg>

@@ -1,0 +1,95 @@
+/*
+
+@media (max-width: 1549px) {
+@media (max-width: 1280px) {
+@media (max-width: 1024px) {
+@media (max-width: 767px) {
+@media (max-width: 576px) {
+
+*/
+
+// @globalUrlImage: ".."; // for dev
+@globalUrlImage: "https://rabby.ru/wp-content/themes/rabby"; // for prod
+
+@main-font: "Gilroy", Open Sans, Arial, sans-serif;
+
+@color-white: #ffffff;
+@color-white_80: rgba(255, 255, 255, 0.8);
+@color-white_70: rgba(255, 255, 255, 0.7);
+@color-white_50: rgba(255, 255, 255, 0.5);
+@color-white_20: rgba(255, 255, 255, 0.2);
+@color-white_10: rgba(255, 255, 255, 0.1);
+
+@color-pink: #e962a0;
+@color-pink_dark: #ba3c76;
+@color-pink_light: #ffc8ea;
+@color-pink_light2: #e7a5ce;
+@color-pink_light3: #e5d7f4;
+@color-pink_20: rgba(233, 98, 160, 0.2);
+@color-pink_80: rgba(233, 98, 160, 0.8);
+
+@color-black: #3b3d4b;
+@color-black2: #000000;
+@color-black_80: rgba(59, 61, 75, 0.8);
+@color-black_50: rgba(59, 61, 75, 0.5);
+@color-black_40: rgba(59, 61, 75, 0.4);
+@color-black_40_2: rgba(0, 0, 0, 0.4);
+@color-black_30: rgba(59, 61, 75, 0.3);
+@color-black_30_2: rgba(0, 0, 0, 0.03);
+@color-black_10: rgba(0, 0, 0, 0.1);
+@color-black_05: rgba(0, 0, 0, 0.05);
+
+@color-gray_light1: #f5ecff;
+@color-gray_light2: #f6f6fe;
+@color-gray_light3: #eaeaf1;
+@color-gray: #c4c4c4;
+@color-dark-gray: #767676;
+
+@color-blue: #959af1;
+@color-blue_dark: #6d72d6;
+
+@color-purple: #d663e9;
+@color-purple_dark: #ac39be;
+
+@color-violet: #9e63e9;
+@color-violet_dark: #793dc6;
+@color-violet_dark2: #7e4fba;
+@color-violet_light: #d7bff4;
+@color-violet_medium: #582b92;
+
+.transitions(@for: all) {
+	transition: @for ease-in-out 0.3s;
+}
+
+.color-style (@color, @background-color) {
+	color: @color;
+	background-color: @background-color;
+}
+
+.truncate-text (@max-height: 100%, @column: 6 ) {
+	display: -webkit-box;
+	-webkit-line-clamp: @column;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	max-height: @max-height;
+	word-break: break-word;
+}
+
+.truncate-line (@max-width: 100%) {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	max-width: @max-width;
+	word-break: break-word;
+}
+
+.bg-img (@position: 50% 50%, @size: cover) {
+	background-position: @position;
+	background-repeat: no-repeat;
+	background-size: @size;
+}
+
+.height-100vh {
+	height: 100vh;
+	height: ~"calc(var(--vh, 1vh) * 100)";
+}

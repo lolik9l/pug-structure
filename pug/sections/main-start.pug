@@ -1,0 +1,83 @@
+﻿mixin main-start()
+	section.section.section_main-start#start
+		.container
+			#gsap-section-main-bg-1.section__bg.section__bg_1(aria-hidden="true")
+
+			#gsap-section-main-bg-2.section__bg.section__bg_2(aria-hidden="true")
+
+			#gsap-section-main-bg-3.section__bg.section__bg_3(aria-hidden="true")
+
+			.section__content
+				.row
+					.col-12.col-md-6.col-xl-7.align-self-center
+						.section__info
+							.headline.headline_main
+								.sr-only
+									h1 Rabby Land
+
+								picture
+									<source srcset="images/svg/main-text.svg" media="(min-width: 1025px)">
+
+									<source srcset="images/svg/main-text-mobile.svg" media="(min-width: 0)">
+
+									img(src="images/svg/main-text.svg", alt="Rabby Land" width="0" height="0")
+
+								//-.d-none.d-lg-block
+									img(src="images/svg/main-text.svg", alt="Rabby Land")
+
+								//-.d-block.d-lg-none
+									img(src="images/svg/main-text-mobile.svg", alt="Rabby Land")
+
+							.description Твой гид из точки А в зону G
+
+							//-a.btn.section__btn(href="javascript: void(0);", target="_blank")
+								span.btn__text Мир Rabby AR/VR
+
+								span.btn__canvas(aria-hidden="true")
+									<canvas id="btn-canvas"></canvas>
+
+
+							a.btn.btn_default.btn_wi.btn_pink(href="javascript: void(0);")
+								span.btn__text Мир Rabby AR/VR
+
+								span.btn__icon.svg-icon(aria-hidden="true")
+									<svg class="svg" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-angle-right"></use></svg>
+
+					.col-12.col-md-6.col-xl-5
+						.section__3D.interactive-block
+							//-.interactive-block__model
+
+								//-model-viewer(
+									src="model/PickleRick.glb"
+									camera-controls
+									disable-zoom
+									auto-rotate
+									camera-orbit="31.12deg 89.63deg 560.6m",
+									min-camera-orbit="auto 50deg auto",
+									max-camera-orbit="auto 100deg 560.6m"
+									exposure="2"
+									poster="images/content/main-page/poster.png")
+
+								//-img(src="images/content/main-page/start-img.png")
+
+							.interactive-block__model
+								picture
+									<source srcset="images/content/flagship/flagship-preview.png" media="(min-width: 1025px)">
+
+									<source srcset="images/content/flagship/flagship-preview.png" media="(max-width: 1024px)">
+
+									img(src="images/content/flagship/flagship-preview.png", alt="" width="0" height="0")
+
+							.interactive-block__info
+								.interactive-block__content
+									.headline.headline_style4.interactive-block__title
+										h2 Розовый кролик
+
+									.interactive-block__category Вибратор
+
+								.interactive-block__btn
+									a.btn.btn_default.btn_wi.btn_transparent(href="javascript: void(0);")
+										span.btn__text Смотреть товар
+
+										span.btn__icon.svg-icon(aria-hidden="true")
+											<svg class="svg" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-angle-right"></use></svg>

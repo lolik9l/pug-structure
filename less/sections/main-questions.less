@@ -1,0 +1,147 @@
+.section_main-questions {
+	padding-top: 30px;
+	padding-bottom: 210px;
+
+	&:not(.section_universarium-questions) {
+		.section__bg {
+			display: none;
+		}
+	}
+
+	.section__bg {
+		position: absolute;
+		bottom: calc(100% + 20px);
+		left: 0;
+		right: 0;
+		margin-bottom: -1px;
+		height: 20px;
+		.bg-img(top center, auto 100%);
+	}
+
+	.section__main {
+		position: relative;
+	}
+
+	.section__img {
+		position: absolute;
+		z-index: -1;
+		left: 41%;
+		top: 50%;
+		width: 82%;
+		pointer-events: none;
+		transform: translateY(-50%);
+		line-height: 0;
+
+		img {
+			max-height: 100%;
+		}
+	}
+
+	.headline_main {
+		margin-bottom: 40px;
+	}
+
+	.description_main {
+		margin-bottom: 30px;
+		max-width: 450px;
+		color: @color-black_80;
+	}
+
+	.section__control {
+		max-width: 300px;
+
+		.btn + .btn {
+			margin-top: 10px;
+		}
+	}
+
+	.section__slider {
+		filter: drop-shadow(0px 10px 50px rgba(59, 61, 75, 0.07));
+	}
+
+	@media (max-width: 1549px) {
+		.headline_main {
+			margin-bottom: 30px;
+		}
+
+		.section__img {
+			left: 44%;
+		}
+	}
+
+	@media (max-width: 1279px) {
+		padding-top: 70px;
+		padding-bottom: 90px;
+
+		.section__bg {
+			bottom: calc(100% + 30px);
+			height: 20px;
+			background-repeat: repeat-x;
+			background-image: url("@{globalUrlImage}/images/backgrounds/main-questions-bg-tablet.svg");
+			background-size: auto;
+		}
+
+		.section__main {
+			margin-bottom: 40px;
+		}
+
+		.section__img {
+			left: 65%;
+			width: 65%;
+		}
+
+		.section__control {
+			max-width: 100%;
+			line-height: 0;
+			font-size: 0;
+
+			.btn + .btn {
+				margin-top: 0;
+				margin-left: 10px;
+			}
+		}
+	}
+
+	@media (max-width: 1024px) {
+		padding-bottom: 70px;
+
+		.headline_main,
+		.description_main {
+			margin-bottom: 20px;
+		}
+
+		.section__img {
+			left: 70%;
+			width: 60%;
+		}
+
+		.section__slider {
+			filter: drop-shadow(0px 10px 30px rgba(59, 61, 75, 0.1));
+		}
+	}
+
+	@media (max-width: 767px) {
+		.section__bg {
+			background-image: url("@{globalUrlImage}/images/backgrounds/main-questions-bg-mobile.svg");
+		}
+	}
+
+	@media (max-width: 575px) {
+		.section__img {
+			display: none;
+		}
+
+		.description_main {
+			max-width: 100%;
+		}
+
+		.section__control {
+			.btn:first-child {
+				padding-top: 9px;
+				padding-bottom: 9px;
+				max-width: 132px;
+				white-space: initial;
+			}
+		}
+	}
+}

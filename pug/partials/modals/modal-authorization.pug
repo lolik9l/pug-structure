@@ -1,0 +1,59 @@
+mixin modal-authorization()
+	.modal.modal_authorization.fade#modal-authorization(tabindex="-1" role="dialog" aria-labelledby="modal-authorization-title" aria-hidden="true")
+		.modal-dialog.modal-dialog-centered(role="document")
+			.modal-content
+				button.modal-close.svg-icon(type="button"  aria-label="Закрыть" data-dismiss="modal")
+					<svg class="svg" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-close"></use></svg>
+
+				form.modal-body.default-padding(name="auth" method="post")
+					.modal-body__title.headline.headline_style2.text-center
+						h2 Авторизация
+					.textarea-input
+						.form-group
+							label.form-group__label 
+								p.form-group__label-text Никнейм или почтовый адрес
+								input.form-control( 
+										type="text" 
+										id="auth-login" 
+										name="auth-login" 
+										placeholder="Введите никнейм или почтовый адрес"
+									)
+							label.form-group__label.mb-0 
+								p.form-group__label-text Введите пароль
+								input.form-control.padding-right-icon.input-password( 
+										type="password" 
+										id="auth-password-pass" 
+										name="auth-password" 
+										placeholder="Введите пароль"
+									)
+								input.form-control.padding-right-icon.input-text( 
+										type="text" 
+										id="auth-password-text" 
+										name="auth-password" 
+										placeholder="Введите пароль"
+									)
+								button.form-group__label-icon-right.svg-icon.js-toggle-show-pass(type="button")
+									svg(class="svg eye" role="img" aria-hidden="true" width="24" height="24")
+										use(xlink:href="#svg-icon-eye")
+									svg(class="svg eye-close" role="img" aria-hidden="true" width="24" height="24")
+										use(xlink:href="#svg-icon-eye-close")
+							p.form-group__forgot-pass.js-modal-opener(data-dismiss="modal" data-id-modal-open="#modal-forgot-password") Забыли пароль?      
+					.modal-body__btn
+						button.btn.btn_default.btn_pink.btn_wi(type="submit")
+							span.btn__text Авторизироваться
+								span.btn__icon.svg-icon(aria-hidden="true")
+									<svg class="svg" role="img" aria-hidden="true" width="24" height="24"><use xlink:href="#svg-icon-angle-right"></use></svg>                
+					.modal-body__info
+						p.modal-body__info-text Нет аккаунта? 
+							button.modal-body__info-link.js-modal-opener(data-dismiss="modal" data-id-modal-open="#modal-registration") Зарегестрироваться
+					.modal-body__login-also.justify-center
+						p.modal-body__login-border или
+						.modal-body__login-list
+							a(href="#" class="link")
+								<svg class="svg" role="img" aria-hidden="true" width="60" height="60"><use xlink:href="#svg-login-vk"></use></svg>
+							a(href="#" class="link")
+								<svg class="svg" role="img" aria-hidden="true" width="60" height="60"><use xlink:href="#svg-login-twitter"></use></svg>
+							a(href="#" class="link")   
+								<svg class="svg" role="img" aria-hidden="true" width="60" height="60"><use xlink:href="#svg-login-facebook"></use></svg>
+							a(href="#" class="link")
+								<svg class="svg" role="img" aria-hidden="true" width="60" height="60"><use xlink:href="#svg-login-google"></use></svg>

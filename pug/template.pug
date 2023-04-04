@@ -1,0 +1,47 @@
+﻿include partials/head
+include partials/header
+include partials/subscribe
+include partials/footer
+include partials/modals
+include partials/svg
+
+include elements/rabbit
+
+include sections/data/data-test
+
+doctype html
+html(lang="ru")
+
+    block head
+        head
+            +head({
+                "title": "Rabby",
+                "description": "Rabby"
+            })
+
+        body.preloader-shown(data-scrollbar)
+            .preloader(aria-label="Загрузка...")
+                script(src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js")
+                lottie-player(src="video/rabby-loader.json"  background="transparent" speed="2" loop autoplay)
+
+            block header
+                +header
+
+            .main-content#main-content
+                block content
+
+                block rabbit
+                    +rabbit
+
+                block footer
+                    +footer
+
+            +modals
+            +svg
+
+
+            block vendors
+                //- Тут должны быть ваши плагины
+            block scripts
+                //- Тут кастомные файлы
+                script( src="js/main.js" )

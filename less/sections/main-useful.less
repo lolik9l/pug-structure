@@ -1,0 +1,143 @@
+.section_main-useful {
+	padding-top: 45px;
+	padding-bottom: 175px;
+
+	// &::before {
+	// 	content: "";
+	// 	position: absolute;
+	// 	top: 0;
+	// 	left: 0;
+	// 	right: 0;
+	// 	bottom: 0;
+	// 	z-index: -2;
+	// 	background-color: @color-gray_light2;
+	// }
+
+	.section__bg {
+		position: absolute;
+		top: -15%;
+		width: 100%;
+		height: 150%;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: top;
+		background-image: url("@{globalUrlImage}/images/backgrounds/main-useful-bg-desc.svg");
+	}
+
+	.section__main {
+		position: relative;
+		padding-left: 70px;
+		padding-right: 220px;
+	}
+
+	.section__img {
+		position: absolute;
+		z-index: -1;
+		right: -155px;
+		bottom: 0;
+		max-width: 66.5%;
+		pointer-events: none;
+		line-height: 0;
+
+		img {
+			max-height: 100%;
+		}
+	}
+
+	.headline_main {
+		margin-bottom: 40px;
+	}
+
+	.description_main {
+		margin-bottom: 30px;
+		max-width: 450px;
+		color: @color-black_80;
+	}
+
+	.section__slider {
+		filter: drop-shadow(0px 10px 50px rgba(59, 61, 75, 0.07));
+	}
+
+	@media (max-width: 1799px) {
+		.section__main {
+			padding-left: 20px;
+			padding-right: 150px;
+		}
+
+		.section__img {
+			right: -180px;
+		}
+	}
+
+	@media (max-width: 1549px) {
+		.section__main {
+			padding-left: 0;
+			padding-right: 100px;
+		}
+
+		.section__img {
+			right: -200px;
+		}
+
+		.headline_main {
+			margin-bottom: 30px;
+		}
+	}
+
+	@media (max-width: 1279px) {
+		padding-bottom: 90px;
+
+		.section__main {
+			margin-bottom: 40px;
+		}
+
+		.section__img {
+			top: -60px;
+			bottom: -100px;
+			right: -180px;
+			max-width: 60%;
+		}
+
+		.section__bg {
+			background-image: url("@{globalUrlImage}/images/backgrounds/main-popular-bg-mob.svg");
+		}
+	}
+
+	@media (max-width: 1024px) {
+		padding-bottom: 70px;
+
+		.headline_main,
+		.description_main {
+			margin-bottom: 20px;
+		}
+
+		.section__img {
+			right: -150px;
+		}
+
+		.section__slider {
+			filter: drop-shadow(0px 10px 30px rgba(59, 61, 75, 0.1));
+		}
+	}
+
+	@media (max-width: 767px) {
+		.section__bg {
+			top: -10%
+			// background-image: url("@{globalUrlImage}/images/backgrounds/main-popular-bg-mobile.svg");
+		}
+	}
+
+	@media (max-width: 575px) {
+		.section__img {
+			display: none;
+		}
+
+		.description_main {
+			max-width: 100%;
+		}
+
+		.section__main {
+			padding-right: 0;
+		}
+	}
+}

@@ -1,0 +1,153 @@
+.sidebar {
+	position: fixed;
+	top: 0;
+	left: -510px;
+	z-index: 110;
+	padding-top: 130px;
+	padding-bottom: 80px;
+	width: 510px;
+	min-width: 360px;
+	.height-100vh;
+	color: @color-black;
+	background-color: @color-white;
+	overflow: hidden;
+	opacity: 0;
+	visibility: hidden;
+	transform: translateX(0);
+	transition: transform ease-in-out .3s, opacity ease-in-out .3s, visibility ease-in-out .3s;
+	pointer-events: auto;
+
+	&__header {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		padding: 50px 50px 25px;
+		height: 130px;
+		background-color: @color-white;
+
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 50px;
+			right: 50px;
+			height: 1px;
+			background-color: @color-black_05;
+		}
+	}
+
+	&__close {
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		padding: 5px;
+		width: 34px;
+		height: 34px;
+		color: @color-black_40;
+
+		&:hover,
+		&:focus {
+			color: @color-violet_dark2;
+		}
+	}
+
+	&__body {
+		padding: 0 50px;
+		max-height: 100%;
+		overflow-y: auto;
+	}
+
+	&__footer {
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		padding: 10px;
+		display: flex;
+		align-items: center;
+		height: 80px;
+		background-color: @color-black_05;
+	}
+
+	&__info {
+		padding: 0 10px;
+		flex: 0 0 100%;
+		max-width: ~"calc(100% - 60px)";
+		color: @color-black_40;
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 1;
+		text-align: center;
+	}
+
+	&__cleaner {
+		padding: 17px;
+		flex: 0 0 60px;
+		width: 60px;
+		height: 60px;
+		.color-style(@color-black_40, @color-black_10);
+		border: 1px solid @color-black_10;
+		border-radius: 50%;
+		box-shadow: inset 0px 0px 0px 4px @color-white;
+		background-clip: padding-box;
+
+		&:hover,
+		&:focus {
+			color: @color-violet_dark2;
+			border-color: @color-violet_light;
+			box-shadow: inset 0px 0px 0px 40px @color-white;
+		}
+	}
+
+	.filters-opened &_filters {
+		opacity: 1;
+		visibility: visible;
+		transform: translateX(100%);
+	}
+
+	@media(max-width: 1549px) {
+		.sidebar__title {
+			font-size: 50px;
+		}
+	}
+
+	@media(max-width: 1024px) {
+		width: 360px;
+		left: -360px;
+
+		&__header {
+			padding: 50px 20px 25px;
+
+			&::after {
+				left: 20px;
+				right: 20px;
+			}
+		}
+
+		&__close {
+			top: 15px;
+			right: 15px;
+		}
+
+		&__body {
+			padding: 0 20px;
+		}
+	}
+}
+
+.filters-block {
+	padding: 26px 0 30px;
+
+	&__title {
+		margin-bottom: 20px;
+	}
+
+	&__list {
+		color: @color-black_80;
+	}
+
+	& + .filters-block {
+		border-top: 1px solid @color-black_05;
+	}
+}
